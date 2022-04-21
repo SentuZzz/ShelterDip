@@ -20,9 +20,23 @@ namespace Shelter
     /// </summary>
     public partial class MainWindow : Window
     {
+        int k = 0;
         public MainWindow()
         {
             InitializeComponent();
+            
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            
+            
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            k++;
+            if (k > 0) { label1.Content = k + 1; }
         }
     }
 }
