@@ -21,6 +21,7 @@ namespace Shelter
     public partial class MainWindow : Window
     {
         int k = 0;
+        int k1 = 0;
         public MainWindow()
         {
             InitializeComponent();
@@ -29,8 +30,9 @@ namespace Shelter
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            
-            
+            k1++;
+            if (k1 > 0) { label2.Content = k1 + 1; }
+
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
@@ -38,5 +40,7 @@ namespace Shelter
             k++;
             if (k > 0) { label1.Content = k + 1; }
         }
+
+        
     }
 }
