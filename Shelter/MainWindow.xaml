@@ -40,16 +40,17 @@
             <Label Content="Shelter" FontFamily="Monotype Corsiva" FontSize="35" Grid.ColumnSpan="2" Foreground="Wheat"/>
         </StackPanel>
         <Image Source="paw.png" Grid.Column="1"/>
-        <Button Grid.Column="1" Grid.Row="2" Grid.ColumnSpan="3" Grid.RowSpan="3" Background="#81b29a" Content="Оформление в приют" FontFamily="Gabriola" FontSize="24" Click="Button_Click"/>
+        <Button Grid.Column="1" Grid.Row="2" Grid.ColumnSpan="3" Grid.RowSpan="3" Background="#81b29a" Content="Оформление в приют" FontFamily="Gabriola" FontSize="18" Click="Button_Click" Cursor="Hand"/>
         <Button Grid.Column="1" Grid.Row="6" Grid.ColumnSpan="3" Grid.RowSpan="3" Background="#81b29a" Content="Оформление в семью" FontFamily="Gabriola" FontSize="24" Click="Button_Click_1"/>
         <Label x:Name="label1" Content="" FontFamily="Monotype Corsiva" FontSize="35" Grid.ColumnSpan="1" Foreground="#81b29a" Grid.Row="3" Grid.Column="7" />
-        <Button Grid.Column="8" Grid.Row="3" Content="?" FontSize="30" Background="Wheat" Foreground="#81b29a"/>
+        <Button Grid.Column="8" Grid.Row="3" Content="?" FontSize="20" Background="Wheat" Foreground="#81b29a"/>
         <TextBlock FontFamily="Monotype Corsiva" FontSize="35" Grid.ColumnSpan="5" Grid.RowSpan="2" Foreground="#81b29a" Grid.Row="6" Grid.Column="5" >
             <Run Text="Животные, нуждающиеся"/>
             <LineBreak />
             <Run Text="в доме:"/>
         </TextBlock>
         <Label x:Name="label2" Content="" FontFamily="Monotype Corsiva" FontSize="35" Grid.ColumnSpan="1" Foreground="#81b29a" Grid.Row="7" Grid.Column="7" />
-        <Button Grid.Column="8" Grid.Row="7" Content="?" FontSize="30" Background="Wheat" Foreground="#81b29a"/>
+        <Button Grid.Column="8" Grid.Row="7" Content="?" FontSize="20" Background="Wheat" Foreground="#81b29a"/>
+        <Frame x:Name="ShelPage" Grid.Column="1" Grid.Row="2" Grid.ColumnSpan="8" Grid.RowSpan="7"/>
     </Grid>
 </Window>
