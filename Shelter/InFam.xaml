@@ -1,4 +1,5 @@
 ﻿<Page x:Class="Shelter.InFam"
+      xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
@@ -6,9 +7,38 @@
       xmlns:local="clr-namespace:Shelter"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
-      Title="InFam">
+      Title="Оформление в семью" Background="#81b29a">
 
     <Grid>
-        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <ComboBox Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="3" Grid.RowSpan="1" materialDesign:HintAssist.Hint="Вид животного" Background="Wheat"/>
+        <ComboBox Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="3" Grid.RowSpan="1" materialDesign:HintAssist.Hint="Порода животного" Background="Wheat" Visibility="Hidden"/>
+        <ComboBox Grid.Row="5" Grid.Column="1" Grid.ColumnSpan="3" Grid.RowSpan="1" materialDesign:HintAssist.Hint="Окрас" Background="Wheat" Visibility="Hidden"/>
+        <ComboBox Grid.Row="7" Grid.Column="1" Grid.ColumnSpan="3" Grid.RowSpan="1" materialDesign:HintAssist.Hint="Возраст" Background="Wheat" Visibility="Hidden"/>
+        <Button Grid.Column="6" Grid.Row="7" Grid.ColumnSpan="3" Background="Wheat" Content="Оформить" Foreground="#156064" Click="Button_Click"/>
+        <TextBox materialDesign:HintAssist.Hint="Кличка" Grid.Row="3" Grid.Column="6" Grid.ColumnSpan="3" Background="Wheat" BorderThickness="1"/>
     </Grid>
 </Page>

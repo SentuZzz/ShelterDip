@@ -27,25 +27,32 @@ namespace Shelter
         public MainWindow()
         {
             InitializeComponent();
-            
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             InShel inShel = new InShel();
             ShelPage.NavigationService.Navigate(inShel);
-            
             //k1++;
             //if (k1 > 0) { label2.Content = k1 + 1; }
-
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            k++;
-            if (k > 0) { label1.Content = k + 1; }
+            InFam inFam = new InFam();
+            ShelPage.NavigationService.Navigate(inFam);
         }
 
-        
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            FAQ1 q1 = new FAQ1();
+            ShelPage.NavigationService.Navigate(q1);
+        }
+
+        private void Button_Click_3(object sender, RoutedEventArgs e)
+        {
+            FAQ2 q2 = new FAQ2();
+            ShelPage.NavigationService.Navigate(q2);
+        }
     }
 }

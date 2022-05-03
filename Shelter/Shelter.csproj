@@ -63,6 +63,14 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="FAQ1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="FAQ2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="InFam.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -78,6 +86,12 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FAQ1.xaml.cs">
+      <DependentUpon>FAQ1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FAQ2.xaml.cs">
+      <DependentUpon>FAQ2.xaml</DependentUpon>
     </Compile>
     <Compile Include="InFam.xaml.cs">
       <DependentUpon>InFam.xaml</DependentUpon>

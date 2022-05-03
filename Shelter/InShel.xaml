@@ -7,7 +7,7 @@
       xmlns:local="clr-namespace:Shelter"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
-      Title="InShel"
+      Title="Оформление в приют"
       Background="#81b29a">
 
     <Grid>
@@ -35,11 +35,12 @@
             <RowDefinition/>
             <RowDefinition/>
         </Grid.RowDefinitions>
-        <TextBox materialDesign:HintAssist.Hint="Кличка" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="3" Background="Wheat" BorderThickness="1"/>
+        <TextBox materialDesign:HintAssist.Hint="Кличка (при наличии)" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="3" Background="Wheat" BorderThickness="1"/>
         <TextBox materialDesign:HintAssist.Hint="Вид" Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="3" Background="Wheat" BorderThickness="1"/>
         <TextBox materialDesign:HintAssist.Hint="Порода (при наличии)" Grid.Row="5" Grid.Column="1" Grid.ColumnSpan="3" Background="Wheat" BorderThickness="1"/>
         <TextBox materialDesign:HintAssist.Hint="Возраст (в месяцах)" Grid.Row="7" Grid.Column="1" Grid.ColumnSpan="3" Background="Wheat" BorderThickness="1"/>
-        <ComboBox Grid.Row="4" Grid.Column="6" Grid.ColumnSpan="3" materialDesign:HintAssist.Hint="Положение" Background="Wheat"/>
+        <TextBox materialDesign:HintAssist.Hint="Окрас" Grid.Row="2" Grid.Column="6" Grid.ColumnSpan="3" Background="Wheat" BorderThickness="1"/>
+        <ComboBox Grid.Row="4" Grid.Column="6" Grid.ColumnSpan="3" Grid.RowSpan="1" materialDesign:HintAssist.Hint="Положение" Background="Wheat"/>
         <Button Grid.Column="6" Grid.Row="7" Grid.ColumnSpan="3" Background="Wheat" Content="Оформить" Foreground="#156064" Click="Button_Click"/>
     </Grid>
 </Page>

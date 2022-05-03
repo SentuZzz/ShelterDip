@@ -24,5 +24,11 @@ namespace Shelter
         {
             InitializeComponent();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("Животное было передано в семью");
+            this.NavigationService.Navigate(null);
+        }
     }
 }

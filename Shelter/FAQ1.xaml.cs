@@ -16,18 +16,17 @@ using System.Windows.Shapes;
 namespace Shelter
 {
     /// <summary>
-    /// Логика взаимодействия для InShel.xaml
+    /// Логика взаимодействия для FAQ1.xaml
     /// </summary>
-    public partial class InShel : Page
+    public partial class FAQ1 : Page
     {
-        public InShel()
+        public FAQ1()
         {
             InitializeComponent();
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("Животное зарегестрировано");
             this.NavigationService.Navigate(null);
         }
     }
